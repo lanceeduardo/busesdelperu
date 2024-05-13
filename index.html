@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Destino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-... (integridad del archivo)" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Busca tu viaje</h1>
+    <div class="search-container">
+      <div class="input-container">
+        <select id="origen" class="input">
+          <option value="" disabled selected>Seleccionar origen</option>
+          <option value="Lima">Lima</option>
+          <option value="Huancayo">Huancayo</option>
+          <option value="Pucallpa">Pucallpa</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+      </div>
+      <div class="image-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="input-container">
+        <select id="destino" class="input">
+          <option value="" disabled selected>Seleccionar destino</option>
+          <!-- Las opciones de destino se agregarán dinámicamente -->
+        </select>
+      </div>
+      <button id="buscar" class="buscar-btn">Buscar</button>
+    </div>
+  </div>
+
+  <div id="resultados" class="resultados-container">
+    <!-- Los resultados se agregarán aquí dinámicamente -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

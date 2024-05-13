@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #193154;
+  background-color: #f7f9ff;
+}
+
+.container {
+  padding: 20px;
+  background-color: #196ef1;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos móviles */
+  justify-content: center; /* Centrar los elementos en dispositivos móviles */
+}
+
+.input-container {
+  flex-grow: 1;
+  margin: 10px; /* Agregar margen en dispositivos móviles */
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid blue;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.image-container {
+  padding: 0 20px;
+  background-color: #3d3d3d;
+}
+
+.image-container i {
+  color: red;
+}
+
+.buscar-btn {
+  width: 120px;
+  height: 60px;
+  background-color: #ffbe23;
+  color: white;
+  font-size: 16px;
+  color: #2f2f2f;
+  border: none;
+  cursor: pointer;
+}
+
+.resultados-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultado {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  min-width: 720px;
+  border-radius: 10px;
+  border: solid 1px #d7d9dd;
+  background-color: white;
+}
+
+.resultado img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: #d7d9dd;
+}
+
+.resultado .info {
+  flex-grow: 1;
+}
+
+.resultado h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.resultado p {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .search-container {
+    max-width: none;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container {
+    width: calc(100% - 20px); /* Ancho ajustado para considerar el margen */
+    margin: 10px 0; /* Margen ajustado */
+  }
+
+  .buscar-btn {
+    width: calc(100% - 20px); /* Ancho ajustado para considerar el margen */
+  }
+
+  .resultado {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .resultado img {
+    width: 80px;
+    height: 80px;
+  }
+}
