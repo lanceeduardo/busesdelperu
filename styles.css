@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  padding: 20px;
+  padding: 10px 0;
   background-color: #196ef1;
 }
 
@@ -106,8 +106,8 @@ h1 {
 
 @media screen and (max-width: 720px) {
   .search-container {
-    max-width: none;
-    padding: 0 20px;
+    width: auto;
+    padding: 2px;
     flex-direction: column;
     align-items: center;
   }
